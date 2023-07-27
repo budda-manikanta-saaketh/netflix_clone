@@ -1,0 +1,143 @@
+/* style1.css */
+
+/* Global Styles */
+:root {
+    --primary-color: #e50914;
+    --dark-color: #141414;
+    --light-color: #f4f4f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000000;
+    color: #999999;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4 {
+    color: #ffffff;
+}
+
+h3 {
+    font-weight: lighter;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    margin: 0.5rem 0;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+img {
+    width: 100%;
+}
+.logo{
+        width: 150px;
+        position: absolute;
+        top: 10px;
+        left: 30px; 
+        z-index: 1;
+}
+.signin-page {
+    background: #000000;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-container {
+    width: 400px;
+    padding: 20px;
+    background-color: var(--dark-color);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.signin-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signin-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signin-container label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.signin-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #999999;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+.signin-container button {
+    background: var(--primary-color);
+    color: #ffffff;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.signin-container button:hover {
+    opacity: 0.9;
+}
+
+.signin-container p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.signin-container p a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.footer{
+    max-width: 70%;
+    margin: 1rem auto;
+    overflow: auto;
+}
+
+.footer ,
+.footer a{
+    color: #999999;
+    font-size: 0.9rem;
+}
+
+.footer p{
+    margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-gap: 2rem;
+}
+
+.footer li{
+    line-height: 2.4;
+}
